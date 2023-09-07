@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+      android:id="@+id/complementTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="32dp"
+      android:layout_marginBottom="20dp"
+      android:text="Divirta-se, monte sua rotina diária!"
+      android:textColor="#A07BE3"
+      android:textSize="24sp"
+      android:textStyle="bold|italic"
+      app:layout_constraintBottom_toTopOf="@+id/banheiro"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+      android:id="@+id/banheiro"
+      android:layout_width="166dp"
+      android:layout_height="67dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="13dp"
+      android:backgroundTint="#00FFFFFF"
+      android:focusable="auto"
+      android:src="@drawable/banheiro2"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton16"
+      app:layout_constraintEnd_toStartOf="@+id/imageButton15"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/complementTextView" />
+
+    <ImageButton
+      android:id="@+id/imageButton14"
+      android:layout_width="197dp"
+      android:layout_height="65dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="34dp"
+      android:layout_marginBottom="13dp"
+      android:backgroundTint="#00FFFFFF"
+      android:src="@drawable/Escovar"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton18"
+      app:layout_constraintEnd_toStartOf="@+id/imageButton20"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+      android:id="@+id/imageButton15"
+      android:layout_width="160dp"
+      android:layout_height="66dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="36dp"
+      android:layout_marginBottom="13dp"
+      android:backgroundTint="#00FFFFFF"
+      android:src="@drawable/Tomarbanho"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton23"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/complementTextView" />
+
+    <ImageButton
+      android:id="@+id/imageButton16"
+      android:layout_width="225dp"
+      android:layout_height="67dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="13dp"
+      android:backgroundTint="#02FFFFFF"
+      android:src="@drawable/jantar"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton14"
+      app:layout_constraintEnd_toStartOf="@+id/imageButton23"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+      android:id="@+id/imageButton17"
+      android:layout_width="225dp"
+      android:layout_height="66dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="204dp"
+      android:backgroundTint="#00FFFFFF"
+      android:src="@drawable/almoco"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+      android:id="@+id/imageButton18"
+      android:layout_width="225dp"
+      android:layout_height="66dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="13dp"
+      android:backgroundTint="#00FFFFFF"
+      android:src="@drawable/cafe"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton19"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+      android:id="@+id/imageButton19"
+      android:layout_width="205dp"
+      android:layout_height="66dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="13dp"
+      android:backgroundTint="#00FFFFFF"
+      android:src="@drawable/guardarBrinquedo"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton17"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+      android:id="@+id/imageButton20"
+      android:layout_width="148dp"
+      android:layout_height="64dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="13dp"
+      android:backgroundTint="#00FFFFFF"
+      android:src="@drawable/arrumar"
+      app:layout_constraintBottom_toTopOf="@+id/futebol"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+      android:id="@+id/imageButton21"
+      android:layout_width="145dp"
+      android:layout_height="66dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="283dp"
+      android:backgroundTint="#00FFFFFF"
+      android:src="@drawable/bale"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+      android:id="@+id/futebol"
+      android:layout_width="151dp"
+      android:layout_height="66dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="13dp"
+      android:backgroundTint="#00FFFFFF"
+      android:src="@drawable/futebol"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton21"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+      android:id="@+id/imageButton23"
+      android:layout_width="144dp"
+      android:layout_height="66dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="13dp"
+      android:backgroundTint="#00FFFFFF"
+      android:src="@drawable/dormir"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton20"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
