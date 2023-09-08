@@ -37,102 +37,111 @@
       android:backgroundTint="#00FFFFFF"
       android:focusable="auto"
       android:src="@drawable/banheiro2"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton16"
-      app:layout_constraintEnd_toStartOf="@+id/imageButton15"
+      app:layout_constraintBottom_toTopOf="@+id/jantar"
+      app:layout_constraintEnd_toStartOf="@+id/tomarBanho"
+      android:contentDescription="@string/banheiro"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/complementTextView" />
 
     <ImageButton
-      android:id="@+id/imageButton14"
+      android:id="@+id/escovarDentes"
       android:layout_width="197dp"
       android:layout_height="65dp"
       android:layout_marginStart="16dp"
       android:layout_marginEnd="34dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
+      android:contentDescription="@string/escovardentes"
       android:src="@drawable/Escovar"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton18"
-      app:layout_constraintEnd_toStartOf="@+id/imageButton20"
+      app:layout_constraintBottom_toTopOf="@+id/cafe"
+      app:layout_constraintEnd_toStartOf="@+id/arrumar"
       app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-      android:id="@+id/imageButton15"
+      android:id="@+id/tomarBanho"
       android:layout_width="160dp"
       android:layout_height="66dp"
       android:layout_marginTop="20dp"
       android:layout_marginEnd="36dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
+      android:contentDescription="@string/banho"
       android:src="@drawable/Tomarbanho"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton23"
+      app:layout_constraintBottom_toTopOf="@+id/dormir"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/complementTextView" />
 
     <ImageButton
-      android:id="@+id/imageButton16"
+      android:id="@+id/jantar"
       android:layout_width="225dp"
       android:layout_height="67dp"
       android:layout_marginStart="16dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#02FFFFFF"
       android:src="@drawable/jantar"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton14"
-      app:layout_constraintEnd_toStartOf="@+id/imageButton23"
+      app:layout_constraintBottom_toTopOf="@+id/escovarDentes"
+      app:layout_constraintEnd_toStartOf="@+id/dormir"
+      android:contentDescription="@string/jantar"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-      android:id="@+id/imageButton17"
+      android:id="@+id/almoco"
       android:layout_width="225dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
       android:layout_marginBottom="204dp"
+      android:contentDescription="@string/almoco"
       android:backgroundTint="#00FFFFFF"
       android:src="@drawable/almoco"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-      android:id="@+id/imageButton18"
+      android:id="@+id/cafe"
       android:layout_width="225dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
+      android:contentDescription="@string/cafe"
       android:src="@drawable/cafe"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton19"
+      app:layout_constraintBottom_toTopOf="@+id/guardarBrinquedo"
       app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-      android:id="@+id/imageButton19"
+      android:id="@+id/guardarBrinquedo"
       android:layout_width="205dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
-      android:src="@drawable/guardarBrinquedo"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton17"
+      android:src="@drawable/guardarbrin"
+      android:contentDescription="@string/guardarbrinquedo"
+      app:layout_constraintBottom_toTopOf="@+id/almoco"
       app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-      android:id="@+id/imageButton20"
+      android:id="@+id/arrumar"
       android:layout_width="148dp"
       android:layout_height="64dp"
       android:layout_marginEnd="16dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
+      android:contentDescription="@string/arrumar"
       android:src="@drawable/arrumar"
       app:layout_constraintBottom_toTopOf="@+id/futebol"
       app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-      android:id="@+id/imageButton21"
+      android:id="@+id/bale"
       android:layout_width="145dp"
       android:layout_height="66dp"
       android:layout_marginEnd="16dp"
       android:layout_marginBottom="283dp"
       android:backgroundTint="#00FFFFFF"
+      android:contentDescription="@string/bale"
       android:src="@drawable/bale"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent" />
@@ -145,18 +154,20 @@
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:src="@drawable/futebol"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton21"
+      android:contentDescription="@string/futebol"
+      app:layout_constraintBottom_toTopOf="@+id/bale"
       app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-      android:id="@+id/imageButton23"
+      android:id="@+id/dormir"
       android:layout_width="144dp"
       android:layout_height="66dp"
       android:layout_marginEnd="16dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:src="@drawable/dormir"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton20"
+      android:contentDescription="@string/dormir"
+      app:layout_constraintBottom_toTopOf="@+id/arrumar"
       app:layout_constraintEnd_toEndOf="parent" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
