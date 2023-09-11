@@ -35,11 +35,11 @@
       android:layout_marginStart="16dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
+      android:contentDescription="@string/banheiro"
       android:focusable="auto"
       android:src="@drawable/banheiro2"
       app:layout_constraintBottom_toTopOf="@+id/jantar"
       app:layout_constraintEnd_toStartOf="@+id/tomarBanho"
-      android:contentDescription="@string/banheiro"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/complementTextView" />
@@ -50,48 +50,48 @@
       android:layout_height="65dp"
       android:layout_marginStart="16dp"
       android:layout_marginEnd="34dp"
-      android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/escovardentes"
       android:src="@drawable/Escovar"
-      app:layout_constraintBottom_toTopOf="@+id/cafe"
       app:layout_constraintEnd_toStartOf="@+id/arrumar"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="224dp" />
 
     <ImageButton
       android:id="@+id/tomarBanho"
       android:layout_width="160dp"
       android:layout_height="66dp"
       android:layout_marginTop="20dp"
-      android:layout_marginEnd="36dp"
+      android:layout_marginEnd="16dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/banho"
       android:src="@drawable/Tomarbanho"
       app:layout_constraintBottom_toTopOf="@+id/dormir"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/complementTextView" />
+      app:layout_constraintTop_toBottomOf="@+id/complementTextView"
+      app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
       android:id="@+id/jantar"
       android:layout_width="225dp"
       android:layout_height="67dp"
       android:layout_marginStart="16dp"
-      android:layout_marginBottom="13dp"
       android:backgroundTint="#02FFFFFF"
-      android:src="@drawable/jantar"
-      app:layout_constraintBottom_toTopOf="@+id/escovarDentes"
-      app:layout_constraintEnd_toStartOf="@+id/dormir"
       android:contentDescription="@string/jantar"
+      android:src="@drawable/jantar"
+      app:layout_constraintEnd_toStartOf="@+id/dormir"
       app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="148dp" />
 
     <ImageButton
       android:id="@+id/almoco"
       android:layout_width="225dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
-      android:layout_marginBottom="116dp"
+      android:layout_marginBottom="200dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/almoco"
       android:src="@drawable/almoco"
@@ -103,31 +103,29 @@
       android:layout_width="225dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
-      android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/cafe"
       android:src="@drawable/cafe"
-      app:layout_constraintBottom_toTopOf="@+id/guardarBrinquedo"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="305dp" />
 
     <ImageButton
       android:id="@+id/guardarBrinquedo"
       android:layout_width="205dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
-      android:layout_marginBottom="12dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/guardarbrinquedo"
       android:src="@drawable/guardarbrin"
-      app:layout_constraintBottom_toTopOf="@+id/almoco"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="387dp" />
 
     <ImageButton
       android:id="@+id/arrumar"
       android:layout_width="148dp"
       android:layout_height="64dp"
-      android:layout_marginEnd="24dp"
-      android:layout_marginBottom="12dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="20dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/arrumar"
       android:src="@drawable/arrumar"
@@ -150,8 +148,8 @@
       android:id="@+id/futebol"
       android:layout_width="151dp"
       android:layout_height="66dp"
-      android:layout_marginEnd="20dp"
-      android:layout_marginBottom="12dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="20dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/futebol"
       android:src="@drawable/futebol"
@@ -165,21 +163,20 @@
       android:layout_marginEnd="16dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
-      android:src="@drawable/dormir"
       android:contentDescription="@string/dormir"
+      android:src="@drawable/dormir"
       app:layout_constraintBottom_toTopOf="@+id/arrumar"
       app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-      android:id="@+id/imageButton"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="16dp"
-      android:layout_marginBottom="164dp"
-      android:contentDescription="@string/dormir"
-      android:src="@drawable/dormir"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
+      android:id="@+id/imageButton5"
+      android:layout_width="157dp"
+      android:layout_height="65dp"
+      android:layout_marginStart="16dp"
+      android:background="#00FFFFFF"
+      android:src="@drawable/brincar"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="546dp" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 
