@@ -91,9 +91,9 @@
       android:layout_width="225dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
-      android:layout_marginBottom="204dp"
-      android:contentDescription="@string/almoco"
+      android:layout_marginBottom="116dp"
       android:backgroundTint="#00FFFFFF"
+      android:contentDescription="@string/almoco"
       android:src="@drawable/almoco"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent" />
@@ -115,10 +115,10 @@
       android:layout_width="205dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
-      android:layout_marginBottom="13dp"
+      android:layout_marginBottom="12dp"
       android:backgroundTint="#00FFFFFF"
-      android:src="@drawable/guardarbrin"
       android:contentDescription="@string/guardarbrinquedo"
+      android:src="@drawable/guardarbrin"
       app:layout_constraintBottom_toTopOf="@+id/almoco"
       app:layout_constraintStart_toStartOf="parent" />
 
@@ -126,8 +126,8 @@
       android:id="@+id/arrumar"
       android:layout_width="148dp"
       android:layout_height="64dp"
-      android:layout_marginEnd="16dp"
-      android:layout_marginBottom="13dp"
+      android:layout_marginEnd="24dp"
+      android:layout_marginBottom="12dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/arrumar"
       android:src="@drawable/arrumar"
@@ -150,11 +150,11 @@
       android:id="@+id/futebol"
       android:layout_width="151dp"
       android:layout_height="66dp"
-      android:layout_marginEnd="16dp"
-      android:layout_marginBottom="13dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="12dp"
       android:backgroundTint="#00FFFFFF"
-      android:src="@drawable/futebol"
       android:contentDescription="@string/futebol"
+      android:src="@drawable/futebol"
       app:layout_constraintBottom_toTopOf="@+id/bale"
       app:layout_constraintEnd_toEndOf="parent" />
 
@@ -168,6 +168,17 @@
       android:src="@drawable/dormir"
       android:contentDescription="@string/dormir"
       app:layout_constraintBottom_toTopOf="@+id/arrumar"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+      android:id="@+id/imageButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="164dp"
+      android:contentDescription="@string/dormir"
+      android:src="@drawable/dormir"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
