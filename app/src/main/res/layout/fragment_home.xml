@@ -18,12 +18,10 @@
       android:layout_marginStart="32dp"
       android:layout_marginTop="16dp"
       android:layout_marginEnd="32dp"
-      android:layout_marginBottom="20dp"
       android:text="Divirta-se, monte sua rotina diária!"
       android:textColor="#A07BE3"
       android:textSize="24sp"
       android:textStyle="bold|italic"
-      app:layout_constraintBottom_toTopOf="@+id/banheiro"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
@@ -33,14 +31,13 @@
       android:layout_width="166dp"
       android:layout_height="67dp"
       android:layout_marginStart="16dp"
+      android:layout_marginTop="15dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/banheiro"
       android:focusable="auto"
       android:src="@drawable/banheiro2"
       app:layout_constraintBottom_toTopOf="@+id/jantar"
-      app:layout_constraintEnd_toStartOf="@+id/tomarBanho"
-      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/complementTextView" />
 
@@ -49,20 +46,18 @@
       android:layout_width="197dp"
       android:layout_height="65dp"
       android:layout_marginStart="16dp"
-      android:layout_marginEnd="34dp"
+      android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/escovardentes"
       android:src="@drawable/Escovar"
-      app:layout_constraintEnd_toStartOf="@+id/arrumar"
-      app:layout_constraintHorizontal_bias="1.0"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="224dp" />
+      app:layout_constraintBottom_toTopOf="@+id/cafe"
+      app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
       android:id="@+id/tomarBanho"
       android:layout_width="160dp"
       android:layout_height="66dp"
-      android:layout_marginTop="20dp"
+      android:layout_marginTop="15dp"
       android:layout_marginEnd="16dp"
       android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
@@ -78,13 +73,12 @@
       android:layout_width="225dp"
       android:layout_height="67dp"
       android:layout_marginStart="16dp"
+      android:layout_marginBottom="13dp"
       android:backgroundTint="#02FFFFFF"
       android:contentDescription="@string/jantar"
       android:src="@drawable/jantar"
-      app:layout_constraintEnd_toStartOf="@+id/dormir"
-      app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="148dp" />
+      app:layout_constraintBottom_toTopOf="@+id/escovarDentes"
+      app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
       android:id="@+id/almoco"
@@ -103,29 +97,31 @@
       android:layout_width="225dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
+      android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/cafe"
       android:src="@drawable/cafe"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="305dp" />
+      app:layout_constraintBottom_toTopOf="@+id/guardarBrinquedo"
+      app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
       android:id="@+id/guardarBrinquedo"
       android:layout_width="205dp"
       android:layout_height="66dp"
       android:layout_marginStart="16dp"
+      android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/guardarbrinquedo"
       android:src="@drawable/guardarbrin"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="387dp" />
+      app:layout_constraintBottom_toTopOf="@+id/almoco"
+      app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
       android:id="@+id/arrumar"
       android:layout_width="148dp"
       android:layout_height="64dp"
       android:layout_marginEnd="16dp"
-      android:layout_marginBottom="20dp"
+      android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/arrumar"
       android:src="@drawable/arrumar"
@@ -149,7 +145,7 @@
       android:layout_width="151dp"
       android:layout_height="66dp"
       android:layout_marginEnd="16dp"
-      android:layout_marginBottom="20dp"
+      android:layout_marginBottom="13dp"
       android:backgroundTint="#00FFFFFF"
       android:contentDescription="@string/futebol"
       android:src="@drawable/futebol"
@@ -168,15 +164,6 @@
       app:layout_constraintBottom_toTopOf="@+id/arrumar"
       app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageButton
-      android:id="@+id/imageButton5"
-      android:layout_width="157dp"
-      android:layout_height="65dp"
-      android:layout_marginStart="16dp"
-      android:background="#00FFFFFF"
-      android:src="@drawable/brincar"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="546dp" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 
